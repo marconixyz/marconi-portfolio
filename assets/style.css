@@ -1,0 +1,564 @@
+.hidden {
+    display: none !important;
+}
+
+.btn {
+    display: none;
+    text-align: right;
+    font-size: 20px;
+}
+
+.fa-xmark {
+    color: #203dfe;
+    font-size: 20px;
+    float: right;
+    margin-top: 16px;
+    margin-right: 17px;
+}
+
+.nav-ocult {
+    list-style: none;
+    text-align: center;
+    padding: 0; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.nav-ocult li {
+    margin-bottom: 80px; 
+}
+
+.ocult-text {
+    color: #203dfe !important;
+    text-decoration: none !important;
+    font-family: 'Adelle Mono', sans-serif !important;
+    font-size: 20px !important;
+    transition: color 0.2s ease !important; 
+}
+
+.ocult-text:hover {
+    color: #fe04d6 !important;
+}
+
+.fa-solid {
+    font-size: 19.5px !important;
+}
+
+.fa-solid:hover {
+    color: #fe04d6 !important;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.fixed-navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 45px;
+    background-color: #eae7e0;
+    z-index: 1000;
+    box-sizing: border-box; 
+    
+}
+
+@font-face {
+    font-family: 'Adelle Mono';
+    src: url('../assets/font/adelle-mono-semibold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Nominee Medium';
+    src: url('..../assets/font/Nominee-Medium.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body, h1, h2, h3, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #eae7e0;
+    font-family: 'Adelle Mono', sans-serif;
+}
+
+.navbar {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+}
+
+.nav-itens {
+    margin-right: 35px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #203dfe;
+    font-weight: lighter;
+    font-family: 'Adelle Mono';
+    font-size: 17px;
+    transition: color 0.2s ease-in-out;
+}
+
+.nav-link:hover {
+    color: #fe04d6;
+}
+
+.nav-link:hover,
+.nav-link:active {
+    text-decoration: underline;
+}
+
+.logo {
+    color: #203dfe;
+    transition: color 0.2s ease-in-out;
+}
+
+.logo:hover {
+    color: #fe04d6;
+}
+
+.logo-text {
+    font-family: 'Adelle Mono';
+    font-size: 20px;
+    text-decoration: none;
+    
+}
+
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 100px;
+    margin-bottom: 50px; 
+}
+
+.contact-text,
+.input-contact {
+    width: 100%;
+    max-width: 600px;
+    color: #203dfe;
+    box-sizing: border-box;
+}
+
+.contact-text {
+    padding: 20px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+.input-contact {
+    width: 100%;
+    max-width: 600px;
+    color: #203dfe;
+    box-sizing: border-box;
+    
+}
+
+.contact-text {
+    padding: 20px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.contact-text-1,
+.contact-text-2,
+.contact-text-4,
+.contact-text-5 {
+    line-height: 2;
+}
+
+.contact-text-3,
+.contact-text-6 {
+    line-height: 5;
+}
+
+.input-contact {
+    padding: 20px;
+    margin-left: 20px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.input-company, .input-email, .input-description {
+    font-size: 13px;
+    color: #203dfe;
+}
+
+#input-1, #input-2, #input-3 {
+    width: 100%;
+    padding: 15px;
+    margin-top: 10px;
+    border: 1px solid #203dfe;
+    background-color: #e2e2e2;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: 'Adelle Mono';
+    font-size: 12px;
+    color: #203dfe;
+}
+
+#input-3 {
+    height: 125px;
+    resize: vertical;
+    overflow-y: auto;
+}
+
+#input-1::placeholder, #input-2::placeholder, #input-3::placeholder {
+    color: #939fee;
+    font-size: 14px;
+}
+
+.contact-logos {
+    display: flex;
+    padding: 25px;
+    margin-bottom: -20px;
+    height: 50px;
+}
+
+.social-link {
+    font-size: 30px;
+    color: #203dfe;
+    margin: 10px; 
+    transition: color 0.2s ease-in-out;
+}
+
+.contact-logos .social-link:hover {
+    color: #fe04d6;
+}
+
+.contact-logos-text {
+    margin-left: 30px;
+    color: #203dfe;
+    font-family: 'Adelle Mono';
+    font-size: 15px;
+    line-height: 25px; 
+}
+
+
+#input-1:focus, #input-2:focus, #input-3:focus {
+    border-color: #203dfe;
+    outline: none;
+}
+
+#submit-button {
+    background-color: #eae7e0;
+    color: #203dfe;
+    padding: 12px 25px; 
+    border: 1px solid #203dfe;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: 'Adelle Mono';
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+#submit-button:hover {
+    background-color: #eae7e0;
+    color: #203dfe;
+}
+
+
+.BackTop {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px;
+}
+
+.back-link, .Back-text {
+    font-size: 15px;
+    color: #203dfe;
+    margin: 10px;
+    text-decoration: none;
+}
+
+.back-link i {
+    margin-right: 2px;
+}
+
+.BackTop:hover .back-link, .BackTop:hover .Back-text {
+    transition: color 0.2s ease-in-out;
+    color: #fe04d6;
+}
+
+#backToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #fe04d6;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#backToTopBtn:hover {
+    background-color: #203dfe;
+}
+
+.fade-out {
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+}
+
+.show {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.slide-in {
+    transform: translateY(100%);
+    transition: transform 0.5s ease-in-out;
+}
+
+.show .slide-in {
+    transform: translateY(0);
+    transition: transform 0.5s ease-in-out;
+}
+
+.success-message {
+    font-size: 15px;
+    color: #203dfe;
+    margin: 10px;
+    text-decoration: none;
+    transform: translateY(-100%);
+    transition: transform 0.5s ease-in-out;
+}
+
+.show .success-message {
+    transform: translateY(0);
+    transition: transform 0.5s ease-in-out;
+}
+
+.BackTop:hover:not(.back-hovered) .back-link,
+.BackTop:hover:not(.back-hovered) .Back-text {
+    transition: color 0.2s ease-in-out;
+    color: #fe04d6;
+}
+
+
+@media (max-width: 768px) {
+    
+    .nav-menu {
+        display: none !important;
+    }
+
+    .btn {
+        color: #203dfe !important;
+        display: flex !important;
+        text-align: right !important;
+        justify-content: flex-end !important;
+    }
+
+    .logo-text {
+        margin-left: 1px !important;
+        
+    }
+    
+    .contact-container {
+        display: flex;
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        justify-content: flex-start !important;
+        width: 92.4% !important;
+        margin-top: 5px !important;
+        padding: 0 15px !important;
+        
+    }
+    
+    .contact-text {
+        text-align: left;
+        font-size: 11px;
+        line-height: 5px !important; 
+        margin-bottom: 5px; 
+        margin-top: 70px; 
+        margin-left: -18px !important; 
+        white-space: nowrap; 
+    }
+    
+
+    .input-contact {
+        margin-top: -25px; 
+        width: 50%;
+        margin-left: -18px !important;
+    }
+
+    #mensagem-enviando,
+    #mensagem-sucesso,
+    #mensagem-erro,
+    #voltarBtn {
+        text-align: left;
+        font-size: 11.5px !important;
+        margin-top: 5px;
+        margin-bottom: 3px;
+        margin-left: 2px !important;
+    
+        
+    }
+    
+    #voltarBtn {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+    #formulario-contato {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .input-group {
+        margin-bottom: 20px;
+    }
+
+    .input-company,
+    .input-email,
+    .input-description {
+        font-size: 10.5px !important; 
+    }
+    
+    input::placeholder,
+    textarea::placeholder {
+        font-size: 10.5px !important; 
+    }
+
+    .input-group input {
+        height: 37px; 
+    }
+
+    textarea {
+        height: 120px; 
+        resize: vertical !important;
+    }
+
+    #input-1,
+    #input-2,
+    #input-3 {
+        font-size: 10px;
+    }
+    
+    #submit-button {
+        font-size: 12px !important;
+        width: 100px; 
+        height: 40px; 
+        max-width: 30%; 
+    }
+    
+    .contact-logos-container {
+        display: flex;
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        justify-content: flex-start !important;
+        margin-top: -80px !important; 
+    }
+    
+    .contact-logos {
+        margin-left: -18px !important;
+        margin-bottom: -25px !important;
+    }
+
+    .contact-logos-text {
+        text-align: left;
+    }
+
+    .fa-brands {
+        font-size: 18.5px;
+        margin-right: -5px !important;  
+    }
+
+    .contact-logos-text-1 {
+        margin-top: -2.5px !important;
+        margin-left: -18px !important;
+        font-size: 13px !important;
+    }
+    
+    .BackTop a {
+        font-size: 13px !important; 
+    }
+
+    .fa-arrow-up {
+        margin-top: 25px !important;
+        font-size: 10px !important;
+    }
+
+    .ocult-text {
+        color: #203dfe !important;
+        text-decoration: none !important;
+        font-family: 'Adelle Mono', sans-serif !important;
+        font-size: 20px !important;
+    }
+    
+ 
+    .fa-solid {
+        font-size: 19.5px !important;
+    }
+    
+
+    body {
+        overflow-x: hidden;
+    }
+  
+}
+
+@media (max-width: 1024px) {
+    
+    .input-contact {
+        margin-top: -25px; 
+        width: 109% !important;
+        margin-left: 3.5px;
+    }
+
+    
+    .fa-brands {
+        font-size: 22.5px;
+        margin-right: -5px ;  
+    }
+
+    .contact-logos-container {
+        margin-top: -150px;
+    }
+    
+
+    .contact-logos-text-1 {
+        margin-top: -2.5px;
+        margin-left: 4px;
+        font-size: 13px;
+    }
+
+    .BackTop a {
+        font-size: 15px; 
+    }
+
+    .fa-arrow-up {
+        margin-top: 25px ;
+        font-size: 10px;
+    }
+
+    
+  }
+
+
+
+
+

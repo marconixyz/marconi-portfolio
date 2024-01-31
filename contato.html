@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/74ac0c830a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <title> leonardo marconi - contato</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar fixed-navbar">
+            <ul class="nav-menu">
+                <li class="nav-itens"><a href="projetos.html" class="nav-link menu-item">PROJETOS</a></li>
+                <li class="nav-itens"><a href="sobre.html" class="nav-link menu-item">SOBRE</a></li>
+                <li class="nav-itens"><a href="contato.html" class="nav-link menu-item">CONTATO</a></li>
+                
+            </ul>
+            <a href="projetos.html" class="logo logo-text">LEONARDO MARCONI</a>
+            <i class="fa-solid fa-bars btn" onclick="navclick()"></i>
+        </nav>
+    </header>
+
+    <div class="ocult-nav" style="display: none;">
+        <i class="fa-solid fa-xmark" onclick="exitclick()"></i>
+        <ul class="nav-ocult">
+            <li class="ocult-nav-text"><a href="projetos.html" class="ocult-text">PROJETOS</a></li>
+            <li class="ocult-nav-text"><a href="sobre.html" class="ocult-text">SOBRE</a></li>
+            <li class="ocult-nav-text"><a href="contato.html" class="ocult-text">CONTATO</a></li>
+        </ul>
+    </div>
+    
+    <div class="contact-container">
+        <div class="contact-text">
+            <p class="contact-text-1">Deixe seu interesse em me contratar ao lado. Se</p>
+            <p class="contact-text-2">preferir, pode enviar diretamente para o e-mail:</p>
+            <p class="contact-text-3">marconi.icloud@gmail.com</p>
+            <p class="contact-text-4">ou entre em contato via ligação ou mensagem no</p>
+            <p class="contact-text-5">whatsapp:</p>
+            <p class="contact-text-6">+55 19 99747 6236</p>
+        </div>
+        
+
+    <div class="input-contact">
+
+            <div id="mensagem-enviando" style="display: none;">Enviando ...</div>
+            <div id="mensagem-sucesso" style="display: none;">Formulário enviado com sucesso!</div>
+            <div id="mensagem-erro" style="display: none;">Erro ao enviar o formulário.</div>  
+            <a id="voltarBtn" style="display: none; cursor: pointer; text-decoration: underline;">&lt; voltar</a>
+
+            <form id="formulario-contato" method="post" action="assets/php/connection.php" onsubmit="enviarFormulario(event)">
+                <div class="input-group">
+                    <label for="input-1" class="input-company">EMPRESA OU NOME DO REPRESENTANTE *</label>
+                    <input type="text" id="input-1" name="input-1" placeholder="digite">
+                </div>
+
+                <div class="input-group">
+                    <label for="input-2" class="input-email">E-MAIL *</label>
+                    <input type="email" id="input-2" name="input-2" placeholder="digite aqui">
+                </div>
+
+                <div class="input-group">
+                    <label for="input-3" class="input-description">DESCRIÇÃO DA VAGA OU FUNÇÃO? *</label>
+                    <textarea id="input-3" name="input-3" placeholder="Sua mensagem ..."></textarea>
+                </div>
+
+                <button type="submit" id="submit-button">
+                    <span id="button-text">Enviar</span>
+                    <span id="loading-indicator"></span>
+                </button>
+
+                <div id="backToTopSection" class="BackTop">
+                    <a href="#" class="back-link">
+                        <i class="fas fa-arrow-up"></i> Back to Top
+                    </a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <section class="contact-logos-container">
+        
+        <div class="contact-logos">
+            <a href="#" class="social-link"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" class="social-link"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="#" class="social-link"><i class=" fa-brands fab fa-line"></i></a>
+        </div>
+
+        <div class="contact-logos-text">
+            <p class="contact-logos-text-1">marconi.icloud@gmail.com</p>
+            <p class="contact-logos-text-1">+55 19 99747 6236</p>
+        </div>
+    </section>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
