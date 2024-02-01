@@ -6,12 +6,13 @@
     <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
     <script src="https://kit.fontawesome.com/74ac0c830a.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/style.css">
-    <title>leonardo marconi - sobre</title>  
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <title> leonardo marconi - sobre</title>
 </head>
 
 <body>
     <header>
-        <nav class="navbar">
+        <nav class="navbar fixed-navbar">
             <ul class="nav-menu">
                 <li class="nav-itens"><a href="projetos.html" class="nav-link menu-item">PROJETOS</a></li>
                 <li class="nav-itens"><a href="sobre.html" class="nav-link menu-item">SOBRE</a></li>
@@ -19,12 +20,12 @@
                 
             </ul>
             <a href="projetos.html" class="logo logo-text">LEONARDO MARCONI</a>
-            <i class="fa-solid fa-bars btn" onclick="navclick()"></i>
+            <i class="fa-solid fa-bars btn" onclick="navclick()" style="cursor: pointer;"></i>
         </nav>
     </header>
 
     <div class="ocult-nav" style="display: none;">
-        <i class="fa-solid fa-xmark" onclick="exitclick()"></i>
+        <i class="fa-solid fa-xmark" onclick="exitclick()" style="cursor: pointer;"></i>
         <ul class="nav-ocult">
             <li class="ocult-nav-text"><a href="projetos.html" class="ocult-text">PROJETOS</a></li>
             <li class="ocult-nav-text"><a href="sobre.html" class="ocult-text">SOBRE</a></li>

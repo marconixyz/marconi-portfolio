@@ -176,7 +176,7 @@ function destacarCamposNaoPreenchidos(formularioContato) {
 function aplicarEstilosErro(input, label) {
     input.style.border = '1px solid #ff0000';
     input.style.color = '#ff6666';
-    label.style.color = '#ff0000'; // Alteração para tornar o label vermelho também
+    label.style.color = '#ff0000'; 
 }
 
 function resetarEstilos(input, label) {
